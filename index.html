@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JS Group - Premium Supplier and Distributor of Interior and Building Materials since 2010. Serving Karnataka, Tamil Nadu, and Kerala with plywood, doors, laminates, and MDF.">
+  <meta name="keywords" content="JS Group, Plywood, Flush Doors, Block Boards, Flexible Ply, WPC Doors, PVC Foam Boards, HMR MDF, Laminates, Veneers, Greenply, Green Panel, Karnataka, Tamil Nadu, Kerala, interior materials, building materials">
+  <meta name="author" content="JS Group">
+  <title>JS Group | Premium Interior & Building Materials</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23020B07'/%3E%3Cpath d='M35 70 V30 H45 V50 H55 V30 H65 V70 H55 V60 H45 V70 Z' fill='%23C5A059'/%3E%3C/svg%3E">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Preloader Screen -->
+  <div class="preloader" id="preloader-container">
+    <div class="preloader-logo-container">
+      <!-- High-End geometric architectural design SVG logo -->
+      <svg class="preloader-svg" viewBox="0 0 100 100">
+        <path class="preloader-path" d="M 50,15 L 85,50 L 50,85 L 15,50 Z M 50,15 L 50,85 M 15,50 L 85,50 M 35,35 L 65,65 M 35,65 L 65,35" />
+      </svg>
+      <div class="preloader-title">JS GROUP</div>
+      <div class="preloader-bar-container">
+        <div class="preloader-bar-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Navigation Bar -->
+  <header class="header" id="main-header">
+    <div class="container navbar">
+      <a href="#" class="logo" id="logo-link">
+        <div class="logo-icon">JS</div>
+        <div class="logo-text">
+          JS GROUP
+          <span>PREMIUM SPACES</span>
+        </div>
+      </a>
+      
+      <!-- Navigation Menu links -->
+      <nav>
+        <ul class="nav-links">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#products">Products</a></li>
+          <li class="nav-item"><a href="#why-choose">Why Us</a></li>
+          <li class="nav-item"><a href="#branches">Branches</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="nav-cta">
+        <a href="#contact" class="btn btn-primary btn-sm">Request Consult</a>
+      </div>
+      
+      <!-- Mobile hamburger toggle button -->
+      <button class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer -->
+  <div class="nav-overlay" id="mobile-nav-overlay"></div>
+  <div class="mobile-nav" id="mobile-drawer">
+    <ul class="mobile-nav-links">
+      <li class="mobile-nav-item"><a href="#" class="mobile-link">Home</a></li>
+      <li class="mobile-nav-item"><a href="#about" class="mobile-link">About</a></li>
+      <li class="mobile-nav-item"><a href="#products" class="mobile-link">Products Range</a></li>
+      <li class="mobile-nav-item"><a href="#why-choose" class="mobile-link">Why Choose Us</a></li>
+      <li class="mobile-nav-item"><a href="#branches" class="mobile-link">Our Branches</a></li>
+      <li class="mobile-nav-item"><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-primary mobile-nav-cta mobile-link">Request Consult</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <!-- Fullscreen Video -->
+    <div class="video-bg-container">
+      <video autoplay loop muted playsinline id="hero-video">
+        <!-- Royalty-free premium interior design video featuring wood and modern spaces -->
+        <source src="https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c02230b80f8abcc584022830f6d3f27b&profile_id=139&oauth2_token_id=57447761" type="video/mp4">
+      </video>
+    </div>
+    <!-- Fallback canvas dynamically activated in script if video loading fails -->
+    <canvas class="hero-canvas" id="particles-canvas"></canvas>
+    
+    <div class="hero-overlay"></div>
+    
+    <div class="container">
+      <div class="hero-content reveal">
+        <div class="section-tag" style="margin-bottom: 24px; color: var(--color-gold-light);">Sourcing the Extraordinary</div>
+        <h1 class="hero-heading">Building Beautiful<br><span>Spaces Since 2010</span></h1>
+        <p class="hero-subheading">India's trusted destination for Premium Plywood, MDF, Laminates, Veneers, Doors and Interior Solutions. Crafted for architectural refinement.</p>
+        <div class="hero-ctas">
+          <a href="#products" class="btn btn-primary">Explore Products</a>
+          <a href="#contact" class="btn btn-secondary">Contact Us</a>
+        </div>
+      </div>
+      
+      <!-- Stats Count-up row inside Hero -->
+      <div class="hero-stats-row reveal delay-2">
+        <div class="hero-stat-item">
+          <div class="hero-stat-number" data-target="15">0</div>
+          <div class="hero-stat-label">Years of Mastery</div>
+        </div>
+        <div class="hero-stat-item">
+          <div class="hero-stat-number" data-target="2500">0</div>
+          <div class="hero-stat-label">Retailers & Dealers</div>
+        </div>
+        <div class="hero-stat-item">
+          <div class="hero-stat-number" data-target="100">0</div>
+          <div class="hero-stat-label">Product Categories</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual-compose reveal">
+          <div class="about-main-image-frame">
+            <!-- Cinematic wood panel architecture image -->
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Luxury Interior Panels and Wood Design">
+          </div>
+          <!-- Floating glass cards -->
+          <div class="about-floating-card about-floating-card-1">
+            <div class="floating-card-title">Est. 2010</div>
+            <div class="floating-card-text">Pioneering Design</div>
+          </div>
+          <div class="about-floating-card about-floating-card-2">
+            <div class="floating-card-title">3+ States</div>
+            <div class="floating-card-text">Karnataka | TN | Kerala</div>
+          </div>
+        </div>
+        
+        <div class="about-content reveal delay-2">
+          <span class="section-tag">Luxury Heritage</span>
+          <h2 class="section-title">A Legacy of Distributing <span>Architectural Mastery</span></h2>
+          <p class="about-content-desc">JS Group is a leading supplier of premium interior materials serving Karnataka, Tamil Nadu and Kerala with <span>world-class products</span> and unmatched service.</p>
+          <p class="about-content-text">Since our inception, we have partnered with top-tier developers, interior design houses, and local dealers to procure materials that possess structural excellence and tactile beauty. Our mission is to combine natural materials with cutting-edge composite technologies.</p>
+          
+          <div class="about-features-list">
+            <!-- Feature item -->
+            <div class="about-feature-item">
+              <div class="about-feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div class="about-feature-details">
+                <h4>Finest Selection</h4>
+                <p>Curated veneers and scratch-resistant laminates.</p>
+              </div>
+            </div>
+            
+            <!-- Feature item -->
+            <div class="about-feature-item">
+              <div class="about-feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div class="about-feature-details">
+                <h4>Prompt Delivery</h4>
+                <p>Advanced logistics system to complete dealer requests.</p>
+              </div>
+            </div>
+          </div>
+          
+          <a href="#contact" class="btn btn-primary">Become a Partner</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">The Catalog</span>
+        <h2 class="section-title">Sought-After <span>Interior Solutions</span></h2>
+        <p class="section-desc">Each product line reflects superior engineering, borer protection, and flawless texture matching.</p>
+      </div>
+      
+      <div class="products-grid">
+        <!-- 1. Plywood -->
+        <div class="product-card reveal">
+          <div class="product-card-texture"></div>
+          <div class="product-image-overlay" style="background-image: linear-gradient(to bottom, rgba(2, 11, 7, 0.1) 0%, rgba(2, 11, 7, 0.95) 100%), url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center;"></div>
+          <div class="product-card-content">
+            <span class="product-badge">Construction</span>
+            <h3 class="product-title">Plywood</h3>
+            <p class="product-desc">Boiling Water Proof (BWP) and Boiling Water Resistant (BWR) structures that endure moisture and time.</p>
+            <a href="#contact" class="product-view-btn">View Details &rarr;</a>
+          </div>
+        </div>
+
+        <!-- 2. MDF -->
+        <div class="product-card reveal delay-1">
+          <div class="product-card-texture"></div>
+          <div class="product-image-overlay" style="background-image: linear-gradient(to bottom, rgba(2, 11, 7, 0.1) 0%, rgba(2, 11, 7, 0.95) 100%), url('https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center;"></div>
+          <div class="product-card-content">
+            <span class="product-badge">Engineered Wood</span>
+            <h3 class="product-title">MDF Panels</h3>
+            <p class="product-desc">Medium Density Fiberboards displaying a uniform core density, perfect for routing profiles and cabinetry.</p>
+            <a href="#contact" class="product-view-btn">View Details &rarr;</a>
+          </div>
+        </div>
+
+        <!-- 3. Laminates -->
+        <div class="product-card reveal delay-2">
+          <div class="product-card-texture"></div>
+          <div class="product-image-overlay" style="background-image: linear-gradient(to bottom, rgba(2, 11, 7, 0.1) 0%, rgba(2, 11, 7, 0.95) 100%), url('https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center;"></div>
+          <div class="product-card-content">
+            <span class="product-badge">Surfaces</span>
+            <h3 class="product-title">Laminates</h3>
+            <p class="product-desc">High-pressure decorative designs incorporating stunning textured, matte, and light-reflective finishes.</p>
+            <a href="#contact" class="product-view-btn">View Details &rarr;</a>
+          </div>
+        </div>
+
+        <!-- 4. Veneers -->
+        <div class="product-card reveal">
+          <div class="product-card-texture"></div>
+          <div class="product-image-overlay" style="background-image: linear-gradient(to bottom, rgba(2, 11, 7, 0.1) 0%, rgba(2, 11, 7, 0.95) 100%), url('https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center;"></div>
+          <div class="product-card-content">
+            <span class="product-badge">Exotic Wood</span>
+            <h3 class="product-title">Veneers</h3>
+            <p class="product-desc">Fine wood slices sliced from premium forest species, creating rich timber aesthetics in luxury spaces.</p>
+            <a href="#contact" class="product-view-btn">View Details &rarr;</a>
+          </div>
+        </div>
+
+        <!-- 5. Flush Doors -->
+        <div class="product-card reveal delay-1">
+          <div class="product-card-texture"></div>
+          <div class="product-image-overlay" style="background-image: linear-gradient(to bottom, rgba(2, 11, 7, 0.1) 0%, rgba(2, 11, 7, 0.95) 100%), url('https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center;"></div>
+          <div class="product-card-content">
+            <span class="product-badge">Entrances</span>
+            <h3 class="product-title">Flush Doors</h3>
+            <p class="product-desc">Solid wood cores bonded under high temperature, delivering heavy structural rigidity and stability.</p>
+            <a href="#contact" class="product-view-btn">View Details &rarr;</a>
+          </div>
+        </div>
+
+        <!-- 6. Block Boards -->
+        <div class="product-card reveal delay-2">
+          <div class="product-card-texture"></div>
+          <div class="product-image-overlay" style="background-image: linear-gradient(to bottom, rgba(2, 11, 7, 0.1) 0%, rgba(2, 11, 7, 0.95) 100%), url('https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center;"></div>
+          <div class="product-card-content">
+            <span class="product-badge">Core Board</span>
+            <h3 class="product-title">Block Boards</h3>
+            <p class="product-desc">Selected pine fillers providing minimal bowing tendencies, ideally supporting heavy horizontal shelves.</p>
+            <a href="#contact" class="product-view-btn">View Details &rarr;</a>
+          </div>
+        </div>
+
+        <!-- 7. Flexible Ply -->
+        <div class="product-card reveal">
+          <div class="product-card-texture"></div>
+          <div class="product-image-overlay" style="background-image: linear-gradient(to bottom, rgba(2, 11, 7, 0.1) 0%, rgba(2, 11, 7, 0.95) 100%), url('https://images.unsplash.com/photo-1588854337236-6889d631faa8?auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center;"></div>
+          <div class="product-card-content">
+            <span class="product-badge">Specialty Ply</span>
+            <h3 class="product-title">Flexible Ply</h3>
+            <p class="product-desc">Pliable composite sheets enabling the design of sophisticated arches and winding structures.</p>
+            <a href="#contact" class="product-view-btn">View Details &rarr;</a>
+          </div>
+        </div>
+
+        <!-- 8. WPC Doors -->
+        <div class="product-card reveal delay-1">
+          <div class="product-card-texture"></div>
+          <div class="product-image-overlay" style="background-image: linear-gradient(to bottom, rgba(2, 11, 7, 0.1) 0%, rgba(2, 11, 7, 0.95) 100%), url('https://images.unsplash.com/photo-1541123437800-1bb1317badc2?auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center;"></div>
+          <div class="product-card-content">
+            <span class="product-badge">Composites</span>
+            <h3 class="product-title">WPC Doors</h3>
+            <p class="product-desc">Highly durable Wood Plastic Composite doors offering 100% water immunity and termite protection.</p>
+            <a href="#contact" class="product-view-btn">View Details &rarr;</a>
+          </div>
+        </div>
+
+        <!-- 9. PVC Foam Boards -->
+        <div class="product-card reveal delay-2">
+          <div class="product-card-texture"></div>
+          <div class="product-image-overlay" style="background-image: linear-gradient(to bottom, rgba(2, 11, 7, 0.1) 0%, rgba(2, 11, 7, 0.95) 100%), url('https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center;"></div>
+          <div class="product-card-content">
+            <span class="product-badge">Plastics</span>
+            <h3 class="product-title">PVC Foam Boards</h3>
+            <p class="product-desc">Lead-free, dense plastic foam layers engineered for kitchen sink units and chemical enclosures.</p>
+            <a href="#contact" class="product-view-btn">View Details &rarr;</a>
+          </div>
+        </div>
+
+        <!-- 10. Greenply -->
+        <div class="product-card reveal">
+          <div class="product-card-texture"></div>
+          <div class="product-image-overlay" style="background-image: linear-gradient(to bottom, rgba(2, 11, 7, 0.1) 0%, rgba(2, 11, 7, 0.95) 100%), url('https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center;"></div>
+          <div class="product-card-content">
+            <span class="product-badge">Distributor</span>
+            <h3 class="product-title">Greenply</h3>
+            <p class="product-desc">Authorized distributor of authentic, eco-friendly Greenply products with minimal emission factors.</p>
+            <a href="#contact" class="product-view-btn">View Details &rarr;</a>
+          </div>
+        </div>
+
+        <!-- 11. Acrylic Laminates -->
+        <div class="product-card reveal delay-1">
+          <div class="product-card-texture"></div>
+          <div class="product-image-overlay" style="background-image: linear-gradient(to bottom, rgba(2, 11, 7, 0.1) 0%, rgba(2, 11, 7, 0.95) 100%), url('https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center;"></div>
+          <div class="product-card-content">
+            <span class="product-badge">Luxury Surfaces</span>
+            <h3 class="product-title">Acrylic Laminates</h3>
+            <p class="product-desc">Glistening, scratch-resistant acrylic layers providing a mirror-like sheen to contemporary modules.</p>
+            <a href="#contact" class="product-view-btn">View Details &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="why-choose" id="why-choose">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Design Standards</span>
+        <h2 class="section-title">Setting the Benchmark in <span>Interior Solutions</span></h2>
+        <p class="section-desc">Our distribution system connects premium global products with top retailers across Southern India.</p>
+      </div>
+      
+      <div class="why-grid">
+        <!-- 1 -->
+        <div class="why-card reveal">
+          <div class="why-icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+          </div>
+          <h3 class="why-title">15+ Years Mastery</h3>
+          <p class="why-desc">Extensive industry wisdom enabling the curation of only premium materials for challenging settings.</p>
+        </div>
+
+        <!-- 2 -->
+        <div class="why-card reveal delay-1">
+          <div class="why-icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="why-title">2500+ Happy Dealers</h3>
+          <p class="why-desc">A deep, loyal logistics chain built upon reliable schedules and consistent board grades.</p>
+        </div>
+
+        <!-- 3 -->
+        <div class="why-card reveal delay-2">
+          <div class="why-icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3 class="why-title">Premium Quality Products</h3>
+          <p class="why-desc">Sourced products comply strictly with ISO guidelines, offering anti-termite wood parameters.</p>
+        </div>
+
+        <!-- 4 -->
+        <div class="why-card reveal">
+          <div class="why-icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3 class="why-title">Multi-State Presence</h3>
+          <p class="why-desc">Strategically positioned logistics outlets across Karnataka, Tamil Nadu, and Kerala region.</p>
+        </div>
+
+        <!-- 5 -->
+        <div class="why-card reveal delay-1">
+          <div class="why-icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 2 18 2 18 6 6 6 6 2"/><rect x="3" y="6" width="18" height="16" rx="2"/></svg>
+          </div>
+          <h3 class="why-title">Trusted Brands Only</h3>
+          <p class="why-desc">We represent and distribute reputable brands, ensuring product consistency and authenticity.</p>
+        </div>
+
+        <!-- 6 -->
+        <div class="why-card reveal delay-2">
+          <div class="why-icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </div>
+          <h3 class="why-title">Customer First Service</h3>
+          <p class="why-desc">Constant support and dynamic communication to solve layout issues or product inquiries.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Branches Section -->
+  <section class="branches" id="branches">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Our Network Map</span>
+        <h2 class="section-title">South Indian <span>Distribution Hubs</span></h2>
+        <p class="section-desc">Interact with the locations to view specific branch contacts, email desks, and offices.</p>
+      </div>
+      
+      <div class="branches-layout">
+        <!-- Interactive SVG map -->
+        <div class="branches-map-column reveal">
+          <div class="map-container">
+            <svg viewBox="0 0 600 650" width="100%" height="100%">
+              <!-- Stylized South India outlines path map representation -->
+              <path class="india-svg-path" d="M 190,50 L 250,50 L 320,80 L 380,100 L 450,140 L 420,200 L 410,240 L 430,280 L 400,320 L 390,360 L 350,420 L 320,490 L 290,560 L 260,610 L 250,620 L 240,610 L 245,550 L 220,510 L 195,490 L 175,440 L 165,390 L 170,350 L 150,320 L 160,260 L 170,200 L 155,140 L 170,90 Z" />
+              
+              <!-- State borders outlines simulated -->
+              <path d="M 160,260 Q 220,280 300,270 M 170,350 Q 250,330 390,360 M 175,440 Q 230,420 290,460 M 220,510 Q 260,490 320,490" fill="none" stroke="rgba(197, 160, 89, 0.08)" stroke-width="1.5" />
+              
+              <!-- Bangalore Coordinates Marker cx=260, cy=360 -->
+              <g class="map-marker" id="marker-blr" data-branch="blr">
+                <circle class="marker-ring" cx="260" cy="360" r="15" />
+                <circle class="marker-circle" cx="260" cy="360" r="6" />
+                <text x="280" y="365" fill="#FFFFFF" font-family="var(--font-sans)" font-size="12" font-weight="600" letter-spacing="1">BANGALORE</text>
+              </g>
+
+              <!-- Chennai Coordinates Marker cx=350, cy=350 -->
+              <g class="map-marker" id="marker-chn" data-branch="chn">
+                <circle class="marker-ring" cx="350" cy="350" r="15" />
+                <circle class="marker-circle" cx="350" cy="350" r="6" />
+                <text x="370" y="355" fill="#FFFFFF" font-family="var(--font-sans)" font-size="12" font-weight="600" letter-spacing="1">CHENNAI</text>
+              </g>
+
+              <!-- Kerala Coordinates Marker cx=210, cy=520 -->
+              <g class="map-marker" id="marker-ker" data-branch="ker">
+                <circle class="marker-ring" cx="210" cy="520" r="15" />
+                <circle class="marker-circle" cx="210" cy="520" r="6" />
+                <text x="135" y="525" fill="#FFFFFF" font-family="var(--font-sans)" font-size="12" font-weight="600" letter-spacing="1">KERALA</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+        
+        <!-- Interactive floating info cards (Right column) -->
+        <div class="branches-details-panel reveal delay-2">
+          <!-- Blr -->
+          <div class="branch-info-slide active" id="slide-blr">
+            <div class="branch-header">
+              <h3 class="branch-city">Bangalore</h3>
+              <span class="branch-state">Karnataka HQ</span>
+            </div>
+            <p class="branch-address">JS Group Corporate Building, Timber Market Road, New Layout, Bangalore, Karnataka - 560002</p>
+            <div class="branch-contacts">
+              <div class="branch-contact-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <a href="tel:+919341555545">+91 93415 55545</a>
+              </div>
+              <div class="branch-contact-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <a href="mailto:jpjagdishharshwal@gmail.com">blr@harshwal.in</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chn -->
+          <div class="branch-info-slide" id="slide-chn">
+            <div class="branch-header">
+              <h3 class="branch-city">Chennai</h3>
+              <span class="branch-state">Tamil Nadu Depot</span>
+            </div>
+            <p class="branch-address">JS Group Distribution Yard, Poonamallee High Road, Chennai, Tamil Nadu - 600056</p>
+            <div class="branch-contacts">
+              <div class="branch-contact-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <a href="tel:+919042005910">+91 90420 05910</a>
+              </div>
+              <div class="branch-contact-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <a href="mailto:jpjagdishharshwal@gmail.com">chn@harshwal.in</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ker -->
+          <div class="branch-info-slide" id="slide-ker">
+            <div class="branch-header">
+              <h3 class="branch-city">Kerala</h3>
+              <span class="branch-state">Kerala Distributor Outlet</span>
+            </div>
+            <p class="branch-address">JS Group Outlet and Warehouse, NH Bypass Road, Cochin, Kerala - 682024</p>
+            <div class="branch-contacts">
+              <div class="branch-contact-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <a href="tel:+917625067466">+91 76250 67466</a>
+              </div>
+              <div class="branch-contact-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <a href="mailto:jpjagdishharshwal@gmail.com">ker@harshwal.in</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Associated Brands Carousel Section -->
+  <section class="brands">
+    <div class="brands-container">
+      <div class="brands-track" id="carousel-track">
+        <!-- Loop items -->
+        <div class="brand-logo"><span class="brand-icon"></span>Greenply</div>
+        <div class="brand-logo"><span class="brand-icon"></span>Green Panel</div>
+        <div class="brand-logo"><span class="brand-icon"></span>CenturyPly</div>
+        <div class="brand-logo"><span class="brand-icon"></span>Merino</div>
+        <div class="brand-logo"><span class="brand-icon"></span>Action Tesa</div>
+        <div class="brand-logo"><span class="brand-icon"></span>JS Premium</div>
+        <div class="brand-logo"><span class="brand-icon"></span>Kitply</div>
+        
+        <!-- Duplicated for loop -->
+        <div class="brand-logo"><span class="brand-icon"></span>Greenply</div>
+        <div class="brand-logo"><span class="brand-icon"></span>Green Panel</div>
+        <div class="brand-logo"><span class="brand-icon"></span>CenturyPly</div>
+        <div class="brand-logo"><span class="brand-icon"></span>Merino</div>
+        <div class="brand-logo"><span class="brand-icon"></span>Action Tesa</div>
+        <div class="brand-logo"><span class="brand-icon"></span>JS Premium</div>
+        <div class="brand-logo"><span class="brand-icon"></span>Kitply</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us Inquiry Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-layout">
+        <!-- Info Column -->
+        <div class="contact-visual-info reveal">
+          <span class="section-tag">Direct Lines</span>
+          <h2 class="contact-visual-title">Begin Your <span>Project Conversation</span></h2>
+          <p class="contact-visual-desc">Fill out the inquiry form to receive quotes, sample books, or technical logs from our engineers.</p>
+          
+          <div class="contact-methods">
+            <!-- 1 -->
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="contact-details">
+                <h4>Sales Division</h4>
+                <p><a href="tel:+917625067466">+91 76250 67466</a></p>
+              </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </div>
+              <div class="contact-details">
+                <h4>Customer Support</h4>
+                <p><a href="tel:+919042005910">+91 90420 05910</a></p>
+              </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <div class="contact-details">
+                <h4>Director Office</h4>
+                <p><a href="tel:+919341555545">+91 93415 55545</a></p>
+              </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="contact-details">
+                <h4>Corporate Mail</h4>
+                <p><a href="mailto:jpjagdishharshwal@gmail.com">jpjagdishharshwal@gmail.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Form Column -->
+        <div class="contact-form-wrapper reveal delay-2">
+          <form class="contact-form" id="inquiry-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" id="name" class="form-control" placeholder="E.g. Alexander Mercer" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone</label>
+              <input type="tel" id="phone" class="form-control" placeholder="+91 XXXXX XXXXX" required>
+            </div>
+            
+            <div class="form-group form-full">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" class="form-control" placeholder="client@architect.com" required>
+            </div>
+            
+            <div class="form-group form-full">
+              <label for="product" class="form-label">Product of Interest</label>
+              <select id="product" class="form-control" required>
+                <option value="" disabled selected>Select category...</option>
+                <option value="Plywood">Plywood</option>
+                <option value="MDF">MDF Panels</option>
+                <option value="Laminates">Laminates</option>
+                <option value="Veneers">Veneers</option>
+                <option value="Flush Doors">Flush Doors</option>
+                <option value="Block Boards">Block Boards</option>
+                <option value="Flexible Ply">Flexible Ply</option>
+                <option value="WPC Doors">WPC Doors</option>
+                <option value="PVC Foam Boards">PVC Foam Boards</option>
+                <option value="Greenply">Greenply</option>
+                <option value="Acrylic Laminates">Acrylic Laminates</option>
+              </select>
+            </div>
+            
+            <div class="form-group form-full">
+              <label for="message" class="form-label">Inquiry Details</label>
+              <textarea id="message" class="form-control" placeholder="Please outline thickness specifications, volume, and drop location..." required></textarea>
+            </div>
+            
+            <div id="form-feedback" class="form-response"></div>
+
+            <div class="form-full">
+              <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Specification</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-icon">JS</div>
+            <div class="logo-text">
+              JS GROUP
+              <span>PREMIUM SPACES</span>
+            </div>
+          </a>
+          <p>Exporters, suppliers, and curators of high-grade wooden panels, doors, and boards for luxury modern interiors.</p>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Curation</h4>
+          <ul class="footer-links">
+            <li class="footer-link"><a href="#">Home</a></li>
+            <li class="footer-link"><a href="#about">About Legacy</a></li>
+            <li class="footer-link"><a href="#products">Products Range</a></li>
+            <li class="footer-link"><a href="#why-choose">Architectural Standard</a></li>
+            <li class="footer-link"><a href="#branches">Distribution Map</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Offices</h4>
+          <ul class="footer-info">
+            <li class="footer-info-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
+              <span>Bangalore, Karnataka</span>
+            </li>
+            <li class="footer-info-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>jpjagdishharshwal@gmail.com</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Newsletter</h4>
+          <p class="newsletter-desc">Subscribe to receive design catalogues and quarterly inventory logs.</p>
+          <form class="newsletter-form" id="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="architect@studio.com" required aria-label="Newsletter Email">
+            <button type="submit" class="newsletter-btn" aria-label="Subscribe">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 JS Group. Sourced premium interior boards. All rights reserved.</p>
+        
+        <div class="footer-socials">
+          <a href="https://instagram.com/harshwalply" class="footer-social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="http://www.harshwal.in" class="footer-social-link" aria-label="Website" target="_blank" rel="noopener noreferrer">
+            <!-- Globe icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="scripts.js"></script>
+</body>
+</html>
